@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir = "ltr">
+
+<style type="text/css">
+
+
+#page{
+    background-color: chartreuse;
+}
+
+.grid-container {
+
+  display: grid;
+  column-count: 1;
+  text-align: center;
+  align-items: center;
+  width:max-content;
+margin: auto;
+
+background-color: aqua;
+
+}
+
+
+.grid-item {
+  
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  width: 400px;
+
+}
+
+
+
+#lap{
+
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    font-size: xx-large;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    color: white;
+}
+
+#top10{
+
+    font-size: xx-large;
+    font-family: "Comic Sans MS";
+    text-align: center;
+    color: blue;
+    list-style-position: inside;
+    
+}
+
+#refresh{
+
+    margin-left: 10%;
+    background-color: aqua;
+    border-color: black;
+    border-width: 5px;
+    width:fit-content;
+    height:fit-content;
+    font-size: xx-large;
+
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<head>
+    <script defer src= "Index.js" charset="utf-8"></script>
+
+
+    <body id = "page">
+       
+            
+            <div id="lap">
+            
+        
+
+    </div>
+
+        <div>
+            <button id = "refresh"> Refresh</button>
+            <div id = "top10" class = "grid-container"> </div>
+        </div>
+        
+    </body>
+</head>
+
+
+</html>
