@@ -39,9 +39,9 @@ fetch('https://cf.nascar.com/live/feeds/live-feed.json')
     
     
 
-    var i = 1
-    while(i < 11){
     
+    
+    for(var i = 0; i <10; i++){
 
     let currDriver = document.getElementById('driver' + i)
 
@@ -54,7 +54,7 @@ fetch('https://cf.nascar.com/live/feeds/live-feed.json')
    fadeIn(currDriver)
 
     
-    i++
+   
     }
 
     
@@ -72,8 +72,8 @@ fetch('https://cf.nascar.com/live/feeds/live-feed.json')
 function updateData(){
 
 
-    //fetch('https://cf.nascar.com/live/feeds/live-feed.json')
-    fetch('https://m.nascar.com/live/feeds/series_1/4871/stage1-feed.json')
+    fetch('https://cf.nascar.com/live/feeds/live-feed.json')
+    //fetch('https://m.nascar.com/live/feeds/series_1/4871/stage1-feed.json')
     .then(res => res.json())
     .then(race_data => {
     
@@ -94,7 +94,7 @@ function updateData(){
         
         
     
-        var i = 1
+        var i = 0
         while(i < 10){
         
     
